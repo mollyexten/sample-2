@@ -1,0 +1,14 @@
+{
+  "name": "sample-2",
+  "version": "1.0.0",
+  "description": "test123",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@mablhq/mabl-cli": "^2.60.3"
+  }
+}

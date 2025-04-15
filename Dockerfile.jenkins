@@ -1,0 +1,18 @@
+FROM jenkins/jenkins:lts-jdk17
+
+USER root
+
+# Install Node.js 20 (or higher)
+RUN apt-get update && \
+    apt-get install -y curl gnupg && \
+    curl -sL https://deb.nodesource.com/setup_20.x | bash - && \
+    apt-get install -y nodejs
+
+# Install Chromium (headless)
+RUN apt-get update && \
+    apt-get install -y chromium
+
+# Install Git
+RUN apt-get install -y git
+
+USER jenkins
