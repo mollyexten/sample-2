@@ -8,6 +8,9 @@ RUN apt-get update && \
     curl -sL https://deb.nodesource.com/setup_20.x | bash - && \
     apt-get install -y nodejs
 
+# Install the mabl CLI globally
+RUN npm install -g @mablhq/mabl-cli
+
 # Install Chromium (headless)
 RUN apt-get update && \
     apt-get install -y chromium
